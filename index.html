@@ -46,7 +46,9 @@
               </figure>
               <nav>
                 <button disabled><img src="https://placehold.co/92x66?text=1" data-src="https://placehold.co/600?text=1" alt="slide1" /></button>
-                <button><img src="https://placehold.co/92x66?text=2" data-src="https://placehold.co/600?text=2" alt="slide2" /></button>
+                <button>
+                  <img src="https://placehold.co/92x66?text=2" data-src="https://placehold.co/600?text=2" alt="slide2" />
+                </button>
                 <button><img src="https://placehold.co/92x66?text=3" data-src="https://placehold.co/600?text=3" alt="slide3" /></button>
                 <button><img src="https://placehold.co/92x66?text=4" data-src="https://placehold.co/600?text=4" alt="slide4" /></button>
                 <button><img src="https://placehold.co/92x66?text=5" data-src="https://placehold.co/600?text=5" alt="slide5" /></button>
@@ -248,8 +250,9 @@
     <script src="./parser.js"></script>
     <script src="https://webinars.webdev.education-services.ru/examples/sp6.1/tests.min.js"></script>
     <script>
-      console.log(parsePage());
-      //void makeTests(parsePage);
+      //console.log(parsePage());
+      console.log(JSON.stringify(parsePage(), null, 2));
+      void makeTests(parsePage);
     </script>
   </body>
 </html>
